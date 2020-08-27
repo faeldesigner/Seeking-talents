@@ -1,0 +1,7 @@
+{
+  "name": "Seeking talents",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
