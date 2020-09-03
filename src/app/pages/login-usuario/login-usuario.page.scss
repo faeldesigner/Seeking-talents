@@ -1,0 +1,1734 @@
+/*******************************  FONTES  *********************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/*******************************  FONTES  *********************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/************ MENU ********************
+
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+
+********************************/
+
+/******************************_________  MENU PRINCIPAL_________ *********************************/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-header-principal {
+  height: 180px;
+  width: 350px;
+  background-color: #7590d6;
+  background: linear-gradient(90deg, #7590d6 0% #4d71d7 100%);
+  box-shadow: 0px 1px 10px rgba(98, 140, 255, 0.5);
+  transform: rotate(-15deg);
+  border-radius: 10px 10px 10px 50px;
+  margin-left: -18px;
+  margin-top: -50px;
+  margin-bottom: 60px;
+
+  .header-content {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      color: #fff;
+      margin-left: 0%;
+      margin-top: 0%;
+    }
+
+    h4 {
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 12px;
+      color: #e4e4e4;
+      font-weight: 100;
+      letter-spacing: 0.4;
+    }
+  }
+
+  .action-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    ion-button {
+      text-transform: capitalize;
+      font-weight: 300;
+      --background: #eff1f7;
+      --border-radius: 7px;
+      --box-shadow: nome;
+    }
+
+    ion-icon {
+      margin-right: 1px;
+    }
+  }
+
+  .menu-items {
+    margin: 0px;
+
+    ion-icon {
+      margin-right: 20px;
+      color: #86979f;
+    }
+
+    ion-item {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .active {
+      border-left: 5px solid;
+      color: #628cff;
+      padding-left: 15px;
+
+      ion-icon {
+        color: #628cff;
+      }
+    }
+  }
+}
+
+/******************************_________ FIM - MENU PRINCIPAL _________*********************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*******************************_________ @media WEB 100%_________******************************** */
+
+/******************************* HEADERS ******************************** */
+.fundoHeader {
+  //background-color: #000080;
+  background-image: linear-gradient(150deg, #3a0968, #280057);
+  padding: 5%;
+
+  h2 {
+    font-family: "Bebas Neue", cursive;
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0%;
+  }
+
+  .menu {
+    margin-left: 0%;
+    margin-top: -5%;
+  }
+  #buttonLogin {
+    position: fixed;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 0%;
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    border-radius: 5%;
+    border: 1px solid;
+    color: #ffffff;
+
+    #textLogin {
+      font-size: 14px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+  }
+}
+/******************************* CONTENT ******************************** */
+.fundoContent {
+  background-image: linear-gradient(150deg, #5b237a, #3325ae);
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  background-position: 30% 45%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+  #container {
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  #container strong {
+    font-size: 30px;
+    line-height: 36px;
+    color: #ffffff;
+    font-family: "Merriweather", serif;
+  }
+
+  #container p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  #container a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+
+  #logo {
+    position: relative;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
+
+  #buttonSaiba {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid;
+    color: #ffffff;
+    border-radius: 15px;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+
+    #textSaiba {
+      font-family: "Merriweather", serif;
+      color: #ffffff;
+    }
+  }
+  h5 {
+    margin-top: -1%;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 3%;
+  }
+
+  h6 {
+    margin-top: -2%;
+    margin-right: 3%;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: right;
+  }
+}
+/******************************* FOOTER ******************************** */
+.footer {
+  display: inline;
+  margin-bottom: 5%;
+  background-color: #022542;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  font-family: "Londrina Solid", cursive;
+
+  #desenvolvido {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  #copyright {
+    font-size: 14px;
+    color: #ffffff;
+  }
+}
+
+/*******************************_________  FIM WEB  _________******************************** */
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*******************************_________ @media MOBILE 1024px Ipad pro_________******************************** */
+
+@media screen and (max-width: 1024px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 4%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 70px;
+      text-align: center;
+      margin-top: 0%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -7%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 8%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 10px;
+
+      #textLogin {
+        font-size: 34px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 50px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 36px;
+      line-height: 36px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 10%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 20px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 30px;
+      }
+    }
+
+    h5 {
+      margin-top: 15%;
+      font-size: 24px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 8%;
+      font-size: 24px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*******************************_________  FIM @media MOBILE 1024px Ipad Pro  _________******************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*******************************_________ @media MOBILE 768px Ipad comum_________******************************** */
+
+@media screen and (max-width: 868px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 4%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 0%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -7%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 8%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 10px;
+
+      #textLogin {
+        font-size: 24px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 50px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 28px;
+      line-height: 36px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 20%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 20px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 25px;
+      }
+    }
+
+    h5 {
+      margin-top: -5%;
+      font-size: 18px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 4%;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*******************************_________  FIM @media MOBILE 768px Ipad Comum_________******************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*******************************_________ @media MOBILE 375px Iphone X_________******************************** */
+
+@media screen and (max-width: 375px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 6%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 0%;
+      margin-left: -8%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -10%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 8%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 2px;
+
+      #textLogin {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    //background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 35px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 10px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 18px;
+      }
+    }
+
+    h5 {
+      margin-top: -50%;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 2%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*******************************_________  FIM @media MOBILE 375px Iphone X _________******************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*******************************_________ @media MOBILE 415px  Iphone 6/7/8 Plus_________******************************** */
+
+@media screen and (max-width: 480px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 2%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 0%;
+      margin-right: 10%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -10%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 10%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 1px;
+
+      #textLogin {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 35px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 5px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+
+    h5 {
+      margin-top: -30%;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 7%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*******************************_________  FIM @media MOBILE 415px Iphone 6/7/8 Plus _________******************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*******************************_________ @media MOBILE 320px_________******************************** */
+
+@media screen and (max-width: 320px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 5%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 0%;
+      margin-right: 10%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -12%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 10%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 1px;
+
+      #textLogin {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 30px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 5px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+
+    h5 {
+      margin-top: -30%;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 7%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*******************************_________  FIM @media MOBILE 320px  _________******************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/*******************************_________ @media MOBILE 240px_________******************************** */
+
+@media screen and (max-width: 240px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 2%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 3%;
+      margin-right: 10%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -15%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0%;
+      margin-top: 15%;
+      margin-right: 4%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      height: 25px;
+      width: 65px;
+
+
+      #textLogin {
+        font-size: 10px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+        margin-top: -10px;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 20px;
+      line-height: 26px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 12px;
+      line-height: 12px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 25%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 1px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 10px;
+      }
+    }
+
+    h5 {
+      margin-top: -10%;
+      font-size: 10px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 10%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+/*******************************_________  FIM @media MOBILE 240px  _________******************************/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 600px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 4%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 35px;
+      text-align: center;
+      margin-top: 0%;
+      margin-right: 10%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -8%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 8%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 1px;
+
+      #textLogin {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 35px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 20%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 5px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+
+    h5 {
+      margin-top: 0%;
+      font-size: 18px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 10%;
+      font-size: 12px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 1%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 5%;
+      margin-right: 0%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -13%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 15%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 1px;
+      height: 35px;
+      width: 22%;
+
+
+      #textLogin {
+        font-size: 12px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+        margin-left: -20%;
+        margin-top: 0%;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 30px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 14px;
+      line-height: 14px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 15%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 1px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 10px;
+      }
+    }
+
+    h5 {
+      margin-top: -30%;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 7%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 1%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 5%;
+      margin-right: 0%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -13%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 15%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 1px;
+      height: 35px;
+      width: 22%;
+
+
+      #textLogin {
+        font-size: 12px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+        margin-left: -20%;
+        margin-top: 0%;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 30px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 14px;
+      line-height: 14px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 15%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 1px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 10px;
+      }
+    }
+
+    h5 {
+      margin-top: -30%;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 7%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .fundoHeader {
+    //background-color: #000080;
+    background-image: linear-gradient(150deg, #3a0968, #280057);
+    padding: 2%;
+
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      color: #ffffff;
+      font-size: 30px;
+      text-align: center;
+      margin-top: 1%;
+      margin-right: 10%;
+    }
+
+    .menu {
+      margin-left: 0%;
+      margin-top: -10%;
+    }
+    #buttonLogin {
+      position: fixed;
+      right: 0;
+      margin-top: 10%;
+      margin-right: 0%;
+      background-image: linear-gradient(150deg, #5b237a, #3325ae);
+      border-radius: 5%;
+      border: 1px solid;
+      color: #ffffff;
+      padding: 1px;
+
+      #textLogin {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: "Merriweather", serif;
+      }
+    }
+  }
+  /******************************* CONTENT ******************************** */
+  .fundoContent {
+    background-image: linear-gradient(150deg, #5b237a, #3325ae);
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-position: 30% 45%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    #container {
+      text-align: center;
+      position: relative;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+    #container strong {
+      font-size: 35px;
+      line-height: 56px;
+      color: #ffffff;
+      font-family: "Merriweather", serif;
+    }
+
+    #container p {
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    #container a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+    }
+
+    #logo {
+      position: relative;
+      padding-top: 5%;
+      margin-bottom: 30%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+
+    #buttonSaiba {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border: 1px solid;
+      color: #ffffff;
+      border-radius: 15px;
+      background-image: linear-gradient(150deg, #3a0968, #280057);
+      padding: 5px;
+
+      #textSaiba {
+        font-family: "Merriweather", serif;
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+
+    h5 {
+      margin-top: -30%;
+      font-size: 12px;
+      color: #ffffff;
+      text-align: left;
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-top: 7%;
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+  /******************************* FOOTER ******************************** */
+  .footer {
+    display: inline;
+    margin-bottom: 5%;
+    background-color: #022542;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    font-family: "Londrina Solid", cursive;
+
+    #desenvolvido {
+      font-size: 16px;
+      color: #ffffff;
+    }
+    #copyright {
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+}

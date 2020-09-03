@@ -1,14 +1,23 @@
+
 <ion-header>
-  <ion-toolbar>
+  <div class="fundoHeader">
+
+    <div class="menu">
+    <h2>Login</h2>
+    
+      <ion-buttons slot="start">
+        <ion-menu-button menu="menu-principal"></ion-menu-button>
+      </ion-buttons>
+    </div>
     <ion-buttons slot="start">
       <div id="buttonLogin">
-        <ion-button  routerLink="/home"> <span id="textLogin"> Voltar </span> 
-          <ion-icon class="ion-activatable ripple-parent" style="color:#000080;" name="log-in"></ion-icon>
+        <ion-button routerLink="/home"> <span id="textLogin"> Voltar </span>
+          <ion-icon class="ion-activatable ripple-parent" style="color:#ffffff;" name="log-in"></ion-icon>
         </ion-button>
       </div>
     </ion-buttons>
-    <ion-title>login-usuario</ion-title>
-  </ion-toolbar>
+  </div>
+
 </ion-header>
 
   <ion-content class="swiper-no-swiping">
