@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <div id="buttonLogin">
+        <ion-button  routerLink="/home"> <span id="textLogin"> Voltar </span> 
+          <ion-icon class="ion-activatable ripple-parent" style="color:#000080;" name="log-in"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-buttons>
+    <ion-title>login-usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content class="swiper-no-swiping">
+    <div class="container top">   
+      <ion-slide>
+        <div class="slide-inner ion-padding">
+          <span>Login</span>
+  
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="email" placeholder="E-mail"></ion-input>
+          </ion-item>
+  
+          <ion-item class="ion-margin-top" lines="none">
+            <ion-input type="password" placeholder="Senha"></ion-input>
+          </ion-item>
+  
+          <ion-button class="ion-margin-top" color="light" expand="block">
+            Entrar
+          </ion-button>
+        </div>
+      </ion-slide>
+    </div>
+    
+  </ion-content>

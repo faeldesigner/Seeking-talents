@@ -1,3 +1,63 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+
+
+  <!-------------------------------------------------- Menu usuário -------------------------------------
+  <ion-menu menuId="menu-usuarios" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+
+        <img src="../assets/image-perfil/faelproject.jpg" alt="">
+
+        <ion-label>
+          <h2>FaelProject</h2>
+          <p>Programador</p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon> Adicionar foto
+        </ion-button>
+      </div>
+
+      <ion-list class="menu-items" lines="none">
+        <ion-item>
+          <ion-icon name="pie-chart-outline"> </ion-icon> Dashboard
+        </ion-item>
+
+
+        <ion-item>
+          <ion-icon name="browsers-outline"> </ion-icon> Ver vídeos
+        </ion-item>
+
+        <ion-item class="active">
+          <ion-icon name="flash"></ion-icon> Descobrir talentos
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="chatbubble-ellipses-outline"> </ion-icon> Mensagens
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="heart-outline"> </ion-icon>Aprenda mais
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="exit-outline"> </ion-icon>Sair
+        </ion-item>
+
+      </ion-list>
+
+    </ion-content>
+  </ion-menu>-->
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Interlagos</ion-title>
+    </ion-toolbar>
+  </ion-header><ion-content padding></ion-content>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
