@@ -48,5 +48,89 @@
 
     </ion-content>
   </ion-menu>
+
+  <!---------------------------------------------------------------->
+
+  <!-------------------------------------------------- Menu principal ---------------------------------------->
+
+
+
+  <ion-app [class.dark-theme]="dark">
+    <ion-menu side="start" menuId="menu-principal" contentId="main">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>
+            <ion-avatar>
+              <ion-img src="assets/icon.png"></ion-img>
+            </ion-avatar>
+            <ion-label class="ion-padding avartuser">
+              <h2>#Muito Mais Linda</h2>
+              <p>Nós vendemos estilos</p>
+            </ion-label>
+          </ion-list-header>
+  
+          <!-- Menus do APP -->
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none"
+              detail="false" [class.selected]="selectedIndex == i">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+  
+          <ion-menu-toggle auto-hide="false">
+            <ion-item lines="none">
+              <ion-icon slot="start" name="moon-outline"></ion-icon>
+              <ion-label>
+                Dark Mode
+              </ion-label>
+              <ion-toggle (click)="themeDark()"></ion-toggle>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+  
+        <!-- Adminstração -->
+        <ion-list class="inbox-list" *ngIf="!admin">
+          <ion-list-header class="label">Gerencia</ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item lines="none" routerDirection="root" [routerLink]="['admProdutos']">
+              <ion-icon slot="start" name="gift-outline"></ion-icon>
+              <ion-label>
+                Produtos
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-icon slot="start" name="people-outline"></ion-icon>
+              <ion-label>
+                Usuarios
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+  
+        <!-- Label de Busca -->
+        <ion-list id="labels-list">
+          <ion-list-header class="label">Categorias</ion-list-header>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item *ngFor="let label of labels" lines="none">
+              <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
+              <ion-label>{{ label }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+  
+      </ion-content>
+    </ion-menu>
+    <!-- Barra de Titulo -->
+    <!-- <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title> Nome do Usuario</ion-title>
+      </ion-toolbar>
+    </ion-header> -->
+
+
   <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

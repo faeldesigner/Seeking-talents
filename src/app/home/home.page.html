@@ -11,28 +11,22 @@
       </div>
     </ion-buttons>
     <h2>Página Inicial</h2>
-
+    <ion-menu-toggle>
       <ion-buttons>
         <ion-menu-button menu="menu-principal"></ion-menu-button>
       </ion-buttons>
-    </div>
+    </ion-menu-toggle>
+  </div>
 
 
 </ion-header>
 
 <ion-content>
-
-
-
   <div class="fundoContent">
-
-
-
     <div id="logo">
       <img src="../assets/img/logo.png" alt="">
     </div>
     <div id="container">
-
       <strong><br> Seeking Talents</strong>
       <br><br>
       <p> Bem Vindo(a) ao Seeking Talents, tá precisando de uma ajudinha pra se descobrir profissionalmente? A gente
@@ -47,11 +41,8 @@
           </a></div>
       </ion-buttons>
     </div>
-      
-
-   
-    <h5> 
-      EQUIPE DE DESENVOLVEDORES:  <br><br>
+    <h5>
+      EQUIPE DE DESENVOLVEDORES: <br><br>
       Caio Henrique: Marketing <br>
       Diego Amaro: Marketing e Designer <br>
       Rafael Nascimento: Programador e Designer.
@@ -61,69 +52,9 @@
     </h6>
     <br>
   </div>
-
-
-
-
-
-
 </ion-content>
 
-<!-------------------------------------------------- Menu principal ---------------------------------------->
 
-
-
-<ion-menu menuId="menu-principal" contentId="main">
-  <ion-content>
-    <div class="menu-header-principal"></div>
-    <div class="header-content">
-
-
-      <img src="../assets/img/logo.png" alt="">
-
-
-      <ion-label>
-        <h2>Seeking Talents</h2>
-        <h4>Menu</h4>
-      </ion-label>
-    </div>
-
-    <div class="action-button"></div>
-    <ion-list class="menu-items" lines="none">
-
-      <ion-item>
-        <ion-buttons slot="start">
-          <ion-button routerLink="/home">
-            <ion-icon name="pie-chart-outline"> </ion-icon> Inicio
-          </ion-button>
-        </ion-buttons>
-
-      </ion-item>
-
-
-      <ion-item>
-        <ion-buttons slot="start">
-          <ion-button routerLink="/login">
-            <ion-icon name="browsers-outline"> </ion-icon> Fazer Login
-          </ion-button>
-        </ion-buttons>
-
-      </ion-item>
-
-      <ion-item class="active">
-        <ion-buttons slot="start">
-          <ion-button routerLink="/cadastro">
-            <ion-icon name="flash"></ion-icon> Cadastrar
-          </ion-button>
-        </ion-buttons>
-
-      </ion-item>
-
-    </ion-list>
-
-
-  </ion-content>
-</ion-menu>
 
 
 <!-- 

@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
+import { Usuario } from "../model/usuario";
 import { AngularFirestore } from "@angular/fire/firestore";
-import { Usuario } from '../model/usuario';
+import { AngularFireAuth } from "@angular/fire/auth";
 
 @Injectable({
   providedIn: "root",
@@ -8,17 +9,26 @@ import { Usuario } from '../model/usuario';
 export class UsuarioService {
   private collection = "usuarios";
 
-  constructor(private firedb: AngularFirestore) {}
+  constructor(private firedb: AngularFirestore, public auth: AngularFireAuth) {}
 
   public add(usuario: Usuario) {
-    return this.firedb.collection(this.collection).add({
-      uid: null,
-      nome: usuario.nome,
-      email: usuario.email,
-      pws: usuario.pws,
-      ativo: usuario.ativo,
-      foto: null
-    }
-    );
+    return this.auth
+      .createUserWithEmailAndPassword(usuario.email, usuario.pws)
+      .then((res) => {
+        return this.firedb
+          .collection(this.collection)
+          .doc(res.user.uid)
+          .set({
+            uid: null,
+            nome: usuario.nome,
+            email: usuario.email,
+            //pws: usuario.pws,
+            ativo: usuario.ativo,
+            foto: null,
+          })
+          .catch(() =>
+            this.auth.currentUser.then((current) => current.delete())
+          );
+      });
   }
 }

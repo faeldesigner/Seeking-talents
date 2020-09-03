@@ -15,12 +15,6 @@ const routes: Routes = [
   },
 
   {
-    path: "menu",
-    loadChildren: () =>
-      import("./pages/menu/menu.module").then((m) => m.MenuPageModule),
-  },
-
-  {
     path: "formUser",
     loadChildren: () =>
       import("./pages/form-usuario/form-usuario.module").then(
